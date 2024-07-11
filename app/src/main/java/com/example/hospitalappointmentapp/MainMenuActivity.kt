@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 class MainMenuActivity : AppCompatActivity() {
     private var RegisterActivityButton: Button? = null
@@ -13,6 +14,7 @@ class MainMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         RegisterActivityButton = findViewById<View>(R.id.button_register) as Button
         LoginActivityButton = findViewById<View>(R.id.button_login) as Button

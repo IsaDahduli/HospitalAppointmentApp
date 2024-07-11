@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.hospitalappointmentapp.Database.RegisterUserDBHelper
 import com.example.hospitalappointmentapp.Model.User
 
@@ -21,6 +22,8 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
         registerUserDBHelper = RegisterUserDBHelper(this)
 
         phoneNumberLoginEditText = findViewById<View>(R.id.edit_text_phone_login) as EditText

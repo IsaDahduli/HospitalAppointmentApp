@@ -11,7 +11,7 @@
         android:paddingBottom="16dp"
         android:gravity="center_horizontal"
         tools:context=".ViewAllAppointments"
-        android:background="#dcdcdc">
+        android:background="@drawable/gradient_bg">
 
     <ListView
             android:id="@android:id/list"

@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.hospitalappointmentapp.Database.BookingDBHandler
 import com.example.hospitalappointmentapp.Database.BookingDBOperations
 
@@ -33,6 +34,7 @@ class MainUserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_user)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         GoToAddAppointmentButton = findViewById<View>(R.id.button_go_to_add_appointment) as Button
         deleteAppointmentButton = findViewById<View>(R.id.button_remove_appointment) as Button
