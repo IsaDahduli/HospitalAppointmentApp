@@ -58,12 +58,20 @@
                         android:drawSelectorOnTop="true"
                         android:layout_marginTop="5dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_departments"
-                        android:hint="Department"
-                        android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_departments"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:focusable="false"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_departments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Department"
+                            android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                         android:text="Choose Doctor Name: "
@@ -83,12 +91,20 @@
                         android:drawSelectorOnTop="true"
                         android:layout_marginTop="5dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_doctors"
-                        android:hint="Doctors"
-                        android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_doctors"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:focusable="false"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_doctors"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Doctors"
+                            android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                         android:text="Choose Date: "
@@ -104,14 +120,23 @@
                         android:layout_height="wrap_content"
                         android:paddingBottom="5px">
 
-                    <EditText
-                            android:id="@+id/edit_text_appointment_date"
-                            android:hint="Date"
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_appointment_date"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="wrap_content"
                             android:layout_weight="8"
                             android:layout_height="wrap_content"
-                            android:focusable="false"
-                            android:gravity="left" />
+                            android:layout_marginTop="5dp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edit_text_appointment_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Date"
+                                android:focusable="false"
+                                android:gravity="left"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <ImageView
                             android:id="@+id/image_view_date"
                             android:src="@android:drawable/ic_menu_today"
@@ -139,12 +164,20 @@
                         android:drawSelectorOnTop="true"
                         android:layout_marginTop="5dp"/>
 
-                <EditText
-                        android:id="@+id/edit_text_times"
-                        android:hint="Times"
-                        android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_times"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:focusable="false"/>
+                        android:layout_marginTop="5dp">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_times"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Times"
+                            android:focusable="false"/>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                         android:id="@+id/button_add_appointment"
@@ -155,7 +188,8 @@
                         android:text="Add Appointment"
                         android:layout_gravity="center"
                         android:textColor="#ffffff"
-                        android:background="#008577"/>
+                        android:background="@drawable/projectbuttons"
+                        android:layout_marginTop="15dp"/>
 
             </LinearLayout>
 
